@@ -16,3 +16,6 @@ __pycache__/
 
 # Large raw dataset
 data/twcs.csv
+
+# Ponytail cleanup tool
+ponytail/
