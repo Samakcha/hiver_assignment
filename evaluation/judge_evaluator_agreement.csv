@@ -1,0 +1,5 @@
+criterion,exact_agreement,mean_absolute_error
+relevance,0.4,0.9
+helpfulness,0.3,0.9
+grounding,0.45,0.75
+clarity,0.7,0.3

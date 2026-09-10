@@ -152,31 +152,135 @@ The strongest aspects were grounding and clarity. Helpfulness was weaker because
 
 An independently labeled 30-example sample achieved **70% exact human agreement** with the reference labels.
 
+### LLM-Judge / Human Agreement
+
+The reply-quality judge was compared against an independently human-rated subset of 7 replies.
+
+| Criterion | Exact Agreement |
+|---|---:|
+| Relevance | 42.9% |
+| Helpfulness | 14.3% |
+| Grounding | 57.1% |
+| Clarity | 71.4% |
+| **Overall** | **46.4%** |
+
+Overall exact agreement was **46.4% across 28 criterion-level ratings** (7 replies × 4 criteria).
+
+Agreement was strongest for clarity and grounding, while helpfulness showed the largest disagreement. This suggests that reply-quality judgments involving practical usefulness are more subjective and should be interpreted cautiously given the small sample size.
+
 ---
 
-## 6. Failure Analysis
+## 6. Failure Analysis — Top 5 Failure Modes
 
-The main failure modes were:
+The final evaluation contained 73 misclassified examples out of 200. The largest errors were concentrated in a few recurring patterns.
 
 ### 1. Context-dependent follow-ups
 
-Messages such as follow-ups to an existing case often omit the original issue. The classifier therefore confuses `follow_up` with `other_unclear`, `non_support`, or `contact_support`.
+**Example 1**
+
+> `@AmericanAir Thanks! Will DM you`
+
+**Actual:** `follow_up`  
+**Predicted:** `non_support`
+
+**Example 2**
+
+> `@AmericanAir Of course no response. Because you don't care`
+
+**Actual:** `follow_up`  
+**Predicted:** `non_support`
+
+**Hypothesis:** Follow-up messages often depend on the previous conversation. Short acknowledgements, complaints about missing responses, and references to an existing case contain little standalone information, making them easy to classify as generic or non-support messages.
+
+**Potential improvement:** Include conversation history when available and explicitly detect references to previous contact, responses, DMs, or unresolved cases.
+
+---
 
 ### 2. Ambiguous flight disruptions
 
-Short messages can imply a cancellation or delay without explicitly stating it, making `flight_disruption` difficult to distinguish from other flight-related intents.
+**Example**
+
+> `@AmericanAir Yep, meant 5608. This is what 4.5 hours in an airport on Thanksgiving does to a person.`
+
+**Actual:** `flight_disruption`  
+**Predicted:** `other_unclear`
+
+**Example**
+
+> `@AmericanAir So - not likely that AA would book a pax with that tight a connection, but the replacement F/A is ok?`
+
+**Actual:** `flight_disruption`  
+**Predicted:** `other_unclear`
+
+**Hypothesis:** Some disruption messages describe the consequences or context of a disrupted journey without explicitly using words such as "cancelled" or "delayed."
+
+**Potential improvement:** Use conversation context and add more examples of indirect disruption language to the classifier's demonstrations.
+
+---
 
 ### 3. Loyalty and benefit ambiguity
 
-Short messages about upgrades, status, miles, or priority benefits sometimes contain too little information and are classified as `non_support`.
+**Example**
+
+> `@AmericanAir Thanks! Doesn't look like I am keeping that status this year :(`
+
+**Actual:** `loyalty_upgrade`  
+**Predicted:** `non_support`
+
+**Example**
+
+> `@AmericanAir I’m not a million miler and am just a small fish in the frequent flyer pool, but I do try to stay loyal to AA.`
+
+**Actual:** `loyalty_upgrade`  
+**Predicted:** `non_support`
+
+**Hypothesis:** Loyalty-related messages can look conversational rather than like explicit support requests, especially when they mention status or loyalty indirectly.
+
+**Potential improvement:** Strengthen the loyalty/status definition with representative examples and distinguish loyalty-related statements from general conversation.
+
+---
 
 ### 4. Very low-information messages
 
-Extremely short messages provide insufficient evidence for a specific support category, producing confusion between `other_unclear` and `non_support`.
+**Example**
 
-### 5. Flight-related non-support messages
+> `@AmericanAir https://t.co/KQS0EKWRff`
 
-Some non-support messages contain flight-related vocabulary, causing the classifier to incorrectly assign `flight_disruption`.
+**Actual:** `other_unclear`  
+**Predicted:** `non_support`
+
+**Example**
+
+> `@AmericanAir WA 🌎`
+
+**Actual:** `other_unclear`  
+**Predicted:** `non_support`
+
+**Hypothesis:** Extremely short messages provide insufficient semantic information for reliable intent classification. The model tends to default to the more common `non_support` category.
+
+**Potential improvement:** Add an explicit low-information/insufficient-context detection step before intent classification and route these messages to `other_unclear`.
+
+---
+
+### 5. Flight-related non-support chatter
+
+**Example**
+
+> `@AmericanAir thanks for the quick response! Hopefully it's up in the air soon! 👍`
+
+**Actual:** `non_support`  
+**Predicted:** `flight_disruption`
+
+**Example**
+
+> `@AmericanAir You don't need to check the status the flight been delayed and I been known fuck off`
+
+**Actual:** `non_support`  
+**Predicted:** `flight_disruption`
+
+**Hypothesis:** Messages containing flight-related words such as "flight" or "delayed" can appear to be active disruption requests even when the customer is simply commenting, acknowledging a response, or making a non-actionable statement.
+
+**Potential improvement:** Classify based on the customer's actionable goal rather than individual flight-related keywords, with stronger examples distinguishing support requests from conversational messages.
 
 ---
 
@@ -293,6 +397,8 @@ hiver_sde_assignment/
 │   ├── evaluation_predictions.csv
 │   ├── confusion_pairs.csv
 │   ├── reply_quality_judge.csv
+│   ├── human_agreement_judge.csv
+│   ├── human_reply_quality_10.csv
 │   ├── human_agreement_independent.csv
 │   ├── human_agreement_results.csv
 │   ├── escalation_results.csv
@@ -349,20 +455,7 @@ The system has several important limitations:
 
 ---
 
-## 13. Next-Week Plan
-
-If given another week, I would prioritize:
-
-1. **Improve follow-up classification** by reconstructing more conversation context instead of classifying isolated tweets.
-2. **Replace TF-IDF retrieval with embedding-based retrieval** and compare retrieval quality directly.
-3. **Evaluate escalation correctness** using a manually labeled escalation benchmark rather than only measuring the policy distribution.
-4. **Improve reply helpfulness** by adding structured response templates for common intents.
-5. **Add confidence-aware routing** so low-confidence predictions automatically escalate instead of relying only on intent-level rules.
-6. **Expand the Golden Set** and measure performance separately on frequent and minority intents.
-
----
-
-## 14. Example
+## 13. Example
 
 ### Input
 
