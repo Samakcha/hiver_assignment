@@ -1,0 +1,2 @@
+model,accuracy,macro_f1,weighted_f1
+GPT-5.4-mini,0.635,0.6280227813710114,0.6358731565534512

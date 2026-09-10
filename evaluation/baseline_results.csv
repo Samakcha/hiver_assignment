@@ -1,0 +1,3 @@
+model,macro_f1,weighted_f1
+TF-IDF + Logistic Regression,0.19807,0.291474
+TF-IDF + Linear SVM,0.26,0.329

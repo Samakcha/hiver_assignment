@@ -1,0 +1,6 @@
+metric,score
+Accuracy,0.635
+Macro F1,0.6280227813710114
+Weighted F1,0.6358731565534512
+Reply Quality,3.875
+Human Agreement,0.7

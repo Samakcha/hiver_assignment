@@ -1,0 +1,201 @@
+customer_tweet_id,intent,decision,reason
+1952986,non_support,auto_handle,The request can be answered using historical support guidance.
+548815,non_support,auto_handle,The request can be answered using historical support guidance.
+2308158,non_support,auto_handle,The request can be answered using historical support guidance.
+1528201,follow_up,auto_handle,The request can be answered using historical support guidance.
+2813114,non_support,auto_handle,The request can be answered using historical support guidance.
+1075780,non_support,auto_handle,The request can be answered using historical support guidance.
+775494,contact_support,auto_handle,The request can be answered using historical support guidance.
+2075103,contact_support,auto_handle,The request can be answered using historical support guidance.
+578855,non_support,auto_handle,The request can be answered using historical support guidance.
+1358740,other_unclear,escalate,other_unclear may require case-specific handling.
+821839,flight_disruption,escalate,flight_disruption may require case-specific handling.
+2943930,follow_up,auto_handle,The request can be answered using historical support guidance.
+1084569,non_support,auto_handle,The request can be answered using historical support guidance.
+1671871,non_support,auto_handle,The request can be answered using historical support guidance.
+185681,non_support,auto_handle,The request can be answered using historical support guidance.
+1103882,non_support,auto_handle,The request can be answered using historical support guidance.
+1224737,non_support,auto_handle,The request can be answered using historical support guidance.
+2174392,non_support,auto_handle,The request can be answered using historical support guidance.
+2057543,contact_support,auto_handle,The request can be answered using historical support guidance.
+2710227,flight_information,auto_handle,The request can be answered using historical support guidance.
+2699896,non_support,auto_handle,The request can be answered using historical support guidance.
+1803430,flight_information,auto_handle,The request can be answered using historical support guidance.
+994691,follow_up,auto_handle,The request can be answered using historical support guidance.
+2417180,non_support,auto_handle,The request can be answered using historical support guidance.
+664494,follow_up,auto_handle,The request can be answered using historical support guidance.
+106586,non_support,auto_handle,The request can be answered using historical support guidance.
+1206247,contact_support,auto_handle,The request can be answered using historical support guidance.
+312228,other_unclear,escalate,other_unclear may require case-specific handling.
+991322,follow_up,auto_handle,The request can be answered using historical support guidance.
+2844768,non_support,auto_handle,The request can be answered using historical support guidance.
+1411117,other_unclear,escalate,other_unclear may require case-specific handling.
+1520560,non_support,auto_handle,The request can be answered using historical support guidance.
+2384389,contact_support,auto_handle,The request can be answered using historical support guidance.
+2919509,follow_up,auto_handle,The request can be answered using historical support guidance.
+32540,follow_up,auto_handle,The request can be answered using historical support guidance.
+842047,contact_support,auto_handle,The request can be answered using historical support guidance.
+205373,follow_up,auto_handle,The request can be answered using historical support guidance.
+2143131,non_support,auto_handle,The request can be answered using historical support guidance.
+2696359,refund_compensation,escalate,refund_compensation may require case-specific handling.
+2926053,non_support,auto_handle,The request can be answered using historical support guidance.
+2747726,contact_support,auto_handle,The request can be answered using historical support guidance.
+2902978,other_unclear,escalate,other_unclear may require case-specific handling.
+867726,non_support,auto_handle,The request can be answered using historical support guidance.
+786625,non_support,auto_handle,The request can be answered using historical support guidance.
+2514506,seat,auto_handle,The request can be answered using historical support guidance.
+1728135,other_unclear,escalate,other_unclear may require case-specific handling.
+1836827,refund_compensation,escalate,refund_compensation may require case-specific handling.
+1592568,other_unclear,escalate,other_unclear may require case-specific handling.
+1411083,onboard_aircraft,auto_handle,The request can be answered using historical support guidance.
+1756727,non_support,auto_handle,The request can be answered using historical support guidance.
+1146874,other_unclear,escalate,other_unclear may require case-specific handling.
+185701,flight_disruption,escalate,flight_disruption may require case-specific handling.
+907593,onboard_aircraft,auto_handle,The request can be answered using historical support guidance.
+2016408,non_support,auto_handle,The request can be answered using historical support guidance.
+970703,non_support,auto_handle,The request can be answered using historical support guidance.
+1565423,contact_support,auto_handle,The request can be answered using historical support guidance.
+701891,other_unclear,escalate,other_unclear may require case-specific handling.
+2591114,refund_compensation,escalate,refund_compensation may require case-specific handling.
+2354076,refund_compensation,escalate,refund_compensation may require case-specific handling.
+2595722,non_support,auto_handle,The request can be answered using historical support guidance.
+1059065,flight_disruption,escalate,flight_disruption may require case-specific handling.
+407623,flight_information,auto_handle,The request can be answered using historical support guidance.
+320711,non_support,auto_handle,The request can be answered using historical support guidance.
+2709410,refund_compensation,escalate,refund_compensation may require case-specific handling.
+2714322,refund_compensation,escalate,refund_compensation may require case-specific handling.
+1210848,contact_support,auto_handle,The request can be answered using historical support guidance.
+2509196,flight_disruption,escalate,flight_disruption may require case-specific handling.
+904832,non_support,auto_handle,The request can be answered using historical support guidance.
+391329,fees_charges,escalate,fees_charges may require case-specific handling.
+2856026,onboard_aircraft,auto_handle,The request can be answered using historical support guidance.
+18785,onboard_aircraft,auto_handle,The request can be answered using historical support guidance.
+2400710,other_unclear,escalate,other_unclear may require case-specific handling.
+333714,follow_up,auto_handle,The request can be answered using historical support guidance.
+2960800,flight_information,auto_handle,The request can be answered using historical support guidance.
+2974048,non_support,auto_handle,The request can be answered using historical support guidance.
+1802248,non_support,auto_handle,The request can be answered using historical support guidance.
+1146872,non_support,auto_handle,The request can be answered using historical support guidance.
+171295,flight_disruption,escalate,flight_disruption may require case-specific handling.
+172593,non_support,auto_handle,The request can be answered using historical support guidance.
+184256,seat,auto_handle,The request can be answered using historical support guidance.
+2127779,non_support,auto_handle,The request can be answered using historical support guidance.
+2321087,non_support,auto_handle,The request can be answered using historical support guidance.
+1484538,baggage,escalate,baggage may require case-specific handling.
+258067,non_support,auto_handle,The request can be answered using historical support guidance.
+1118791,non_support,auto_handle,The request can be answered using historical support guidance.
+1404726,non_support,auto_handle,The request can be answered using historical support guidance.
+327141,non_support,auto_handle,The request can be answered using historical support guidance.
+2844774,other_unclear,escalate,other_unclear may require case-specific handling.
+1631934,non_support,auto_handle,The request can be answered using historical support guidance.
+52410,other_unclear,escalate,other_unclear may require case-specific handling.
+1712175,flight_information,auto_handle,The request can be answered using historical support guidance.
+1172331,other_unclear,escalate,other_unclear may require case-specific handling.
+1767092,flight_disruption,escalate,flight_disruption may require case-specific handling.
+907638,follow_up,auto_handle,The request can be answered using historical support guidance.
+893206,airport_gate_staff,escalate,airport_gate_staff may require case-specific handling.
+1460835,other_unclear,escalate,other_unclear may require case-specific handling.
+854918,non_support,auto_handle,The request can be answered using historical support guidance.
+2510745,non_support,auto_handle,The request can be answered using historical support guidance.
+1185979,fees_charges,escalate,fees_charges may require case-specific handling.
+1907989,seat,auto_handle,The request can be answered using historical support guidance.
+259579,loyalty_upgrade,auto_handle,The request can be answered using historical support guidance.
+2191848,non_support,auto_handle,The request can be answered using historical support guidance.
+2621397,flight_disruption,escalate,flight_disruption may require case-specific handling.
+713447,refund_compensation,escalate,refund_compensation may require case-specific handling.
+1002991,booking_change,auto_handle,The request can be answered using historical support guidance.
+265716,other_unclear,escalate,other_unclear may require case-specific handling.
+1576609,non_support,auto_handle,The request can be answered using historical support guidance.
+2116425,airport_gate_staff,escalate,airport_gate_staff may require case-specific handling.
+2174435,fees_charges,escalate,fees_charges may require case-specific handling.
+2691138,onboard_aircraft,auto_handle,The request can be answered using historical support guidance.
+376868,booking_change,auto_handle,The request can be answered using historical support guidance.
+1067344,check_in,auto_handle,The request can be answered using historical support guidance.
+1868718,airport_gate_staff,escalate,airport_gate_staff may require case-specific handling.
+375910,follow_up,auto_handle,The request can be answered using historical support guidance.
+1002423,flight_disruption,escalate,flight_disruption may require case-specific handling.
+858641,airport_gate_staff,escalate,airport_gate_staff may require case-specific handling.
+1850123,booking_change,auto_handle,The request can be answered using historical support guidance.
+1515541,non_support,auto_handle,The request can be answered using historical support guidance.
+1787519,baggage,escalate,baggage may require case-specific handling.
+2284896,non_support,auto_handle,The request can be answered using historical support guidance.
+2357007,baggage,escalate,baggage may require case-specific handling.
+1365064,airport_gate_staff,escalate,airport_gate_staff may require case-specific handling.
+1946697,fees_charges,escalate,fees_charges may require case-specific handling.
+2383973,non_support,auto_handle,The request can be answered using historical support guidance.
+1592562,contact_support,auto_handle,The request can be answered using historical support guidance.
+2378413,non_support,auto_handle,The request can be answered using historical support guidance.
+1812226,follow_up,auto_handle,The request can be answered using historical support guidance.
+291926,flight_disruption,escalate,flight_disruption may require case-specific handling.
+1084105,non_support,auto_handle,The request can be answered using historical support guidance.
+925989,contact_support,auto_handle,The request can be answered using historical support guidance.
+1526338,fees_charges,escalate,fees_charges may require case-specific handling.
+2119599,non_support,auto_handle,The request can be answered using historical support guidance.
+798521,flight_disruption,escalate,flight_disruption may require case-specific handling.
+968348,non_support,auto_handle,The request can be answered using historical support guidance.
+1942622,refund_compensation,escalate,refund_compensation may require case-specific handling.
+1439236,airport_gate_staff,escalate,airport_gate_staff may require case-specific handling.
+2987780,other_unclear,escalate,other_unclear may require case-specific handling.
+2864245,flight_information,auto_handle,The request can be answered using historical support guidance.
+713475,refund_compensation,escalate,refund_compensation may require case-specific handling.
+1566224,non_support,auto_handle,The request can be answered using historical support guidance.
+1261508,non_support,auto_handle,The request can be answered using historical support guidance.
+1187827,non_support,auto_handle,The request can be answered using historical support guidance.
+2522664,non_support,auto_handle,The request can be answered using historical support guidance.
+945069,follow_up,auto_handle,The request can be answered using historical support guidance.
+1306894,flight_disruption,escalate,flight_disruption may require case-specific handling.
+1618120,fees_charges,escalate,fees_charges may require case-specific handling.
+1778214,non_support,auto_handle,The request can be answered using historical support guidance.
+162340,other_unclear,escalate,other_unclear may require case-specific handling.
+562499,flight_disruption,escalate,flight_disruption may require case-specific handling.
+1426545,non_support,auto_handle,The request can be answered using historical support guidance.
+1758294,flight_disruption,escalate,flight_disruption may require case-specific handling.
+1720438,other_unclear,escalate,other_unclear may require case-specific handling.
+2748742,airport_gate_staff,escalate,airport_gate_staff may require case-specific handling.
+1185226,flight_disruption,escalate,flight_disruption may require case-specific handling.
+123525,non_support,auto_handle,The request can be answered using historical support guidance.
+1522524,flight_disruption,escalate,flight_disruption may require case-specific handling.
+2442140,onboard_aircraft,auto_handle,The request can be answered using historical support guidance.
+1771230,non_support,auto_handle,The request can be answered using historical support guidance.
+2572457,non_support,auto_handle,The request can be answered using historical support guidance.
+1866630,check_in,auto_handle,The request can be answered using historical support guidance.
+2761028,follow_up,auto_handle,The request can be answered using historical support guidance.
+1840929,flight_disruption,escalate,flight_disruption may require case-specific handling.
+2288416,flight_information,auto_handle,The request can be answered using historical support guidance.
+699765,flight_disruption,escalate,flight_disruption may require case-specific handling.
+1137506,loyalty_upgrade,auto_handle,The request can be answered using historical support guidance.
+1033182,flight_disruption,escalate,flight_disruption may require case-specific handling.
+1689776,airport_gate_staff,escalate,airport_gate_staff may require case-specific handling.
+2974362,refund_compensation,escalate,refund_compensation may require case-specific handling.
+238424,fees_charges,escalate,fees_charges may require case-specific handling.
+1211364,non_support,auto_handle,The request can be answered using historical support guidance.
+1048352,airport_gate_staff,escalate,airport_gate_staff may require case-specific handling.
+2398394,seat,auto_handle,The request can be answered using historical support guidance.
+96049,fees_charges,escalate,fees_charges may require case-specific handling.
+1013171,flight_disruption,escalate,flight_disruption may require case-specific handling.
+294436,refund_compensation,escalate,refund_compensation may require case-specific handling.
+1942939,fees_charges,escalate,fees_charges may require case-specific handling.
+205425,flight_disruption,escalate,flight_disruption may require case-specific handling.
+1607048,onboard_aircraft,auto_handle,The request can be answered using historical support guidance.
+1054354,non_support,auto_handle,The request can be answered using historical support guidance.
+1837814,fees_charges,escalate,fees_charges may require case-specific handling.
+2189547,airport_gate_staff,escalate,airport_gate_staff may require case-specific handling.
+2622962,baggage,escalate,baggage may require case-specific handling.
+1736540,follow_up,auto_handle,The request can be answered using historical support guidance.
+417101,loyalty_upgrade,auto_handle,The request can be answered using historical support guidance.
+468406,other_unclear,escalate,other_unclear may require case-specific handling.
+1622441,baggage,escalate,baggage may require case-specific handling.
+1177330,fees_charges,escalate,fees_charges may require case-specific handling.
+2768597,onboard_aircraft,auto_handle,The request can be answered using historical support guidance.
+2061947,refund_compensation,escalate,refund_compensation may require case-specific handling.
+1782445,contact_support,auto_handle,The request can be answered using historical support guidance.
+1954118,other_unclear,escalate,other_unclear may require case-specific handling.
+1844577,contact_support,auto_handle,The request can be answered using historical support guidance.
+2886244,seat,auto_handle,The request can be answered using historical support guidance.
+1113694,other_unclear,escalate,other_unclear may require case-specific handling.
+2108169,refund_compensation,escalate,refund_compensation may require case-specific handling.
+406735,non_support,auto_handle,The request can be answered using historical support guidance.
+570567,non_support,auto_handle,The request can be answered using historical support guidance.
+2552852,non_support,auto_handle,The request can be answered using historical support guidance.
+2245113,non_support,auto_handle,The request can be answered using historical support guidance.
+2814090,follow_up,auto_handle,The request can be answered using historical support guidance.
